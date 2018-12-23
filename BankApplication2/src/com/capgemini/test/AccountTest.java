@@ -36,7 +36,7 @@ public class AccountTest {
 	@Test(expected=com.capgemini.exceptions.InsufficientInitialBalanceException.class)
 	public void whenTheAmountIsLessThan500SystemShouldThrowException() throws InsufficientInitialBalanceException
 	{
-		accountService.createAccount(101, 400);
+		accountService.createAccount(101, 400); 
 	}
 	
 	@Test
